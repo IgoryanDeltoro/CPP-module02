@@ -5,8 +5,8 @@ int main(void)
     Fixed a;
     // Fixed const b(2147483647);
     Fixed const b(10);
-    Fixed const c(99999999999.0f);
-    // Fixed const c(42.42f);
+    // Fixed const c(99999999999.0f);
+    Fixed const c(42.42f);
     Fixed const d(b);
     a = Fixed(1234.4321f);
     std::cout << "a is " << a << std::endl;
