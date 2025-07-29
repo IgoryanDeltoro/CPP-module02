@@ -13,7 +13,7 @@ Fixed::Fixed(const int &iv) {
     }
 }
 Fixed::Fixed(const float &fv) {
-    float floatVal = fv * (1 << _fractionalBits);
+    int floatVal = roundf(fv * (1 << _fractionalBits));
     if (floatVal < INT_MIN || floatVal > INT_MAX)
     {
         std::cout << "Error: the entered number is out of the range to be stored in float\n";
@@ -21,7 +21,7 @@ Fixed::Fixed(const float &fv) {
     }
     else
     {
-        _fixedValue = roundf(floatVal);
+        _fixedValue = floatVal;
     }
 }
 Fixed::Fixed(const Fixed &f) : _fixedValue(f._fixedValue) {}

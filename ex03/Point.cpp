@@ -5,13 +5,6 @@ Point::Point(const float &x, const float &y): _x(x), _y(y) {}
 Point::Point(const Point &p) : _x(p._x), _y(p._y) {}
 Point::~Point() {}
 
-Fixed Point::getX() const {
-    return _x;
-}
-Fixed Point::getY() const {
-    return _y;
-}
-
 bool Point::bsp(Point const a, Point const b, Point const c, Point const p) {
     Fixed abx = b._x - a._x, aby = b._y - a._y;
     Fixed apx = p._x - a._x, apy = p._y - a._y;
