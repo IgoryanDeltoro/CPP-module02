@@ -1,10 +1,10 @@
 #ifndef FIXED_HPP
-#define FIXED_HPP
+# define FIXED_HPP
 
-#include <iostream>
-#include <string>
-#include <cmath>
-#include <climits>
+# include <iostream>
+# include <string>
+# include <cmath>
+# include <climits>
 
 class Fixed {
 private:

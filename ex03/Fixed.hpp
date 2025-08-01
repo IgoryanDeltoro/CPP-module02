@@ -6,8 +6,7 @@
 #include <cmath>
 #include <climits>
 
-class Fixed
-{
+class Fixed {
 private:
     int _fixedValue;
     static const int _fractionalBits = 8;
